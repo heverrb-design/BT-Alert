@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="#80FFFFFF"> <!-- Brillo de pulsación más intenso -->
+    <item>
+        <layer-list>
+            <!-- Sombra profunda inferior -->
+            <item>
+                <shape android:shape="oval">
+                    <solid android:color="#4D000000" />
+                    <padding android:bottom="6dp" />
+                </shape>
+            </item>
+            <!-- Cuerpo del botón con brillo esférico superior -->
+            <item android:bottom="4dp">
+                <shape android:shape="oval">
+                    <gradient
+                        android:type="radial"
+                        android:gradientRadius="160dp"
+                        android:centerX="0.35"
+                        android:centerY="0.3"
+                        android:startColor="#A0FFFFFF"
+                        android:centerColor="#20FFFFFF"
+                        android:endColor="#33000000" />
+                    <stroke android:width="2.5dp" android:color="#40FFFFFF" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</ripple>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fakeLockRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black">
+
+    <!-- Hora y fecha centradas en la mitad superior -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_gravity="top"
+        android:layout_marginTop="160dp">
+
+        <TextView
+            android:id="@+id/txtTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:textSize="72sp"
+            android:fontFamily="sans-serif-light"
+            android:letterSpacing="-0.03"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/txtDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#AAFFFFFF"
+            android:textSize="18sp"
+            android:fontFamily="sans-serif-light"
+            android:layout_marginTop="4dp"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+    <!-- Contenedor PIN centrado (invisible, aparece al tocar 5 veces) -->
+    <LinearLayout
+        android:id="@+id/pinContainer"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="gone"
+        android:background="#33FFFFFF"
+        android:padding="24dp"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/txtPinPrompt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Puntos del PIN -->
+        <LinearLayout
+            android:id="@+id/pinDots"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Teclado numérico 3x4 -->
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:columnCount="3"
+            android:rowCount="4">
+
+            <Button android:id="@+id/btn1" style="@style/PinButton" android:text="1" />
+            <Button android:id="@+id/btn2" style="@style/PinButton" android:text="2" />
+            <Button android:id="@+id/btn3" style="@style/PinButton" android:text="3" />
+            <Button android:id="@+id/btn4" style="@style/PinButton" android:text="4" />
+            <Button android:id="@+id/btn5" style="@style/PinButton" android:text="5" />
+            <Button android:id="@+id/btn6" style="@style/PinButton" android:text="6" />
+            <Button android:id="@+id/btn7" style="@style/PinButton" android:text="7" />
+            <Button android:id="@+id/btn8" style="@style/PinButton" android:text="8" />
+            <Button android:id="@+id/btn9" style="@style/PinButton" android:text="9" />
+            <Button android:id="@+id/btnClear" style="@style/PinButton" android:text="⌫" />
+            <Button android:id="@+id/btn0" style="@style/PinButton" android:text="0" />
+            <Button android:id="@+id/btnCancel" style="@style/PinButton" android:text="✕" />
+
+        </GridLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

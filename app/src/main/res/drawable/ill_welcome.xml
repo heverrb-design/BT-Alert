@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="160dp"
+    android:height="160dp"
+    android:viewportWidth="160"
+    android:viewportHeight="160">
+
+    <!-- Círculo fondo -->
+    <path
+        android:pathData="M80,80m-70,0a70,70 0,1 1,140 0a70,70 0,1 1,-140 0"
+        android:fillColor="#1A1D3D"/>
+
+    <!-- Teléfono -->
+    <path
+        android:pathData="M55,35 L105,35 Q110,35 110,40 L110,120 Q110,125 105,125 L55,125 Q50,125 50,120 L50,40 Q50,35 55,35 Z"
+        android:fillColor="#2A2E5E"
+        android:strokeColor="#4CAF50"
+        android:strokeWidth="2"/>
+
+    <!-- Pantalla -->
+    <path
+        android:pathData="M57,45 L103,45 L103,110 L57,110 Z"
+        android:fillColor="#05061f"/>
+
+    <!-- Botón inferior teléfono -->
+    <path
+        android:pathData="M75,115 L85,115"
+        android:strokeColor="#4CAF50"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"/>
+
+    <!-- Bluetooth símbolo en pantalla -->
+    <path
+        android:pathData="M80,58 L80,82 M80,58 L90,65 L80,72 L90,79 L80,86"
+        android:strokeColor="#4CAF50"
+        android:strokeWidth="3"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"/>
+
+    <!-- Campana -->
+    <path
+        android:pathData="M80,95 m-8,0 q0,-8 8,-8 q8,0 8,8 l2,6 l-20,0 Z"
+        android:fillColor="#D32F2F"/>
+    <path
+        android:pathData="M78,101 q2,3 4,0"
+        android:strokeColor="#D32F2F"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"/>
+</vector>
+

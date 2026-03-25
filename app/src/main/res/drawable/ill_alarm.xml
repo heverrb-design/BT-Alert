@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="160dp"
+    android:height="160dp"
+    android:viewportWidth="160"
+    android:viewportHeight="160">
+
+    <!-- Círculo fondo -->
+    <path
+        android:pathData="M80,80m-70,0a70,70 0,1 1,140 0a70,70 0,1 1,-140 0"
+        android:fillColor="#1A1D3D"/>
+
+    <!-- Cuerpo reloj -->
+    <path
+        android:pathData="M80,40m-38,0a38,38 0,1 1,76 0a38,38 0,1 1,-76 0"
+        android:fillColor="#2A2E5E"
+        android:strokeColor="#4CAF50"
+        android:strokeWidth="3"/>
+
+    <!-- Manecilla hora -->
+    <path
+        android:pathData="M80,40 L80,26"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="3"
+        android:strokeLineCap="round"/>
+
+    <!-- Manecilla minutos -->
+    <path
+        android:pathData="M80,40 L92,34"
+        android:strokeColor="#D32F2F"
+        android:strokeWidth="3"
+        android:strokeLineCap="round"/>
+
+    <!-- Centro reloj -->
+    <path
+        android:pathData="M80,40m-3,0a3,3 0,1 1,6 0a3,3 0,1 1,-6 0"
+        android:fillColor="#FFFFFF"/>
+
+    <!-- Pata izquierda -->
+    <path
+        android:pathData="M52,73 L44,80"
+        android:strokeColor="#4CAF50"
+        android:strokeWidth="3"
+        android:strokeLineCap="round"/>
+
+    <!-- Pata derecha -->
+    <path
+        android:pathData="M108,73 L116,80"
+        android:strokeColor="#4CAF50"
+        android:strokeWidth="3"
+        android:strokeLineCap="round"/>
+
+    <!-- Ondas alarma izquierda -->
+    <path
+        android:pathData="M46,55 Q38,65 46,75"
+        android:strokeColor="#D32F2F"
+        android:strokeWidth="3"
+        android:strokeLineCap="round"
+        android:fillColor="@android:color/transparent"/>
+
+    <!-- Ondas alarma derecha -->
+    <path
+        android:pathData="M114,55 Q122,65 114,75"
+        android:strokeColor="#D32F2F"
+        android:strokeWidth="3"
+        android:strokeLineCap="round"
+        android:fillColor="@android:color/transparent"/>
+
+    <!-- Texto ALARMA -->
+    <path
+        android:pathData="M60,95 L100,95"
+        android:strokeColor="#4CAF50"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"/>
+    <path
+        android:pathData="M55,103 L105,103"
+        android:strokeColor="#8E91B3"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"/>
+    <path
+        android:pathData="M62,111 L98,111"
+        android:strokeColor="#8E91B3"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"/>
+</vector>

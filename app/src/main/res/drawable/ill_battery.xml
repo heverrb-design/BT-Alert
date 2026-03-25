@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="160dp"
+    android:height="160dp"
+    android:viewportWidth="160"
+    android:viewportHeight="160">
+
+    <!-- Círculo fondo -->
+    <path
+        android:pathData="M80,80m-70,0a70,70 0,1 1,140 0a70,70 0,1 1,-140 0"
+        android:fillColor="#1A1D3D"/>
+
+    <!-- Cuerpo batería -->
+    <path
+        android:pathData="M35,55 L115,55 Q120,55 120,60 L120,105 Q120,110 115,110 L35,110 Q30,110 30,105 L30,60 Q30,55 35,55 Z"
+        android:fillColor="#2A2E5E"
+        android:strokeColor="#4CAF50"
+        android:strokeWidth="3"/>
+
+    <!-- Terminal + batería -->
+    <path
+        android:pathData="M120,70 L128,70 Q131,70 131,73 L131,92 Q131,95 128,95 L120,95"
+        android:fillColor="#4CAF50"/>
+
+    <!-- Relleno batería (80%) -->
+    <path
+        android:pathData="M36,61 L96,61 Q97,61 97,62 L97,104 Q97,105 96,105 L36,105 Q35,105 35,104 L35,62 Q35,61 36,61 Z"
+        android:fillColor="#4CAF50"/>
+
+    <!-- Candado abierto -->
+    <path
+        android:pathData="M95,55 m-15,0 q0,-18 15,-18 q15,0 15,18"
+        android:strokeColor="#FFA500"
+        android:strokeWidth="5"
+        android:strokeLineCap="round"
+        android:fillColor="@android:color/transparent"/>
+
+    <!-- Cuerpo candado -->
+    <path
+        android:pathData="M78,47 L112,47 Q115,47 115,50 L115,68 Q115,71 112,71 L78,71 Q75,71 75,68 L75,50 Q75,47 78,47 Z"
+        android:fillColor="#FFA500"/>
+
+    <!-- Cerrojo candado -->
+    <path
+        android:pathData="M95,55 L95,63"
+        android:strokeColor="#1A1D3D"
+        android:strokeWidth="4"
+        android:strokeLineCap="round"/>
+    <path
+        android:pathData="M95,63m-3,0a3,3 0,1 1,6 0a3,3 0,1 1,-6 0"
+        android:fillColor="#1A1D3D"/>
+</vector>
